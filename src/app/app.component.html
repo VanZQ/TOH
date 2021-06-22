@@ -1,0 +1,48 @@
+<h1>{{title}}</h1>
+<style>
+  *{  
+             margin: 0px;  
+             padding: 0px;  
+         }  
+         video{  
+             position: fixed;  
+             right: 0px;  
+             bottom: 0px;  
+             min-width: 100%;  
+             min-height: 100%;  
+             height: auto;  
+             width: auto;  
+             /*加滤镜*/
+             /*filter: blur(15px); //背景模糊设置 */
+             /*-webkit-filter: grayscale(100%);*/  
+             /*filter:grayscale(100%); //背景灰度设置*/  
+             z-index:-11
+         }  
+         source{  
+             min-width: 100%;  
+             min-height: 100%;  
+             height: auto;  
+             width: auto;  
+         } 
+     p{
+         width: 100%;
+       text-align: center;
+       font-size: 40px;
+       color: white;
+     }
+ </style>
+
+<video autoplay loop muted>
+  <source src="
+  https://video.qiantucdn.com/58pic/37/43/09/64I58PICJBwIy9kh3gHHW.mp4_10s.mp4?e=1624350123&token=OyzEe_0O8H433pm7zVEjtnSy5dVdfpsIawO2nx3f:s7YsvBk4ESI5MvW8gKUOOVRUL44=" 
+  type="video/mp4"  />
+Your browser does not support the video tag.
+</video>
+ 
+<nav>
+  <a routerLink="/dashboard">Dashboard</a>
+  <a routerLink="/heroes">Heroes</a>
+  <a href="https://vanzq.github.io/Website/Conclusion.HTML" target="_blank">报告</a>
+</nav>
+<router-outlet></router-outlet>
+<app-messages></app-messages>
